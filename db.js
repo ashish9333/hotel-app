@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-var mongoURL = 'mongodb+srv://user:user@cluster0.xigfc6o.mongodb.net/test'
+var mongoURL = 'mongodb+srv://user:user@cluster0.n2h0kxl.mongodb.net/test'
 
 mongoose.connect(mongoURL , {useUnifiedTopology : true , useNewUrlParser:true})
 

@@ -17,8 +17,8 @@ const RoomList = module.exports = mongoose.model('roomlists', RoomListSchema);
 
 module.exports.getAllRoomsList = (req,res)=>{  
     try {
-        if(req.query.roomNumber) {
-            const query = {roomNumber : +req.query.roomNumber}
+        if(req.body.roomNumber) {
+            const query = {roomNumber : +req.body.roomNumber}
             RoomList.findOne(query).then(rooms => {
                 if(!rooms){
                     return res.status(201).send({

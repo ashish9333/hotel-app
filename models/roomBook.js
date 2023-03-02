@@ -144,7 +144,8 @@ module.exports.getAllBooking = (req,res)=>{
         query.EndDate = EndDate;
     }
     try {
-        BookingRoomModel.find({}).then((bookedRooms) => {
+        BookingRoomModel.find(query).then((bookedRooms) => {
+            console.log(bookedRooms)
             if (!bookedRooms) {
                 return res.status(200).send({ success: "success", msg: 'success', data : [] });
             }
