@@ -33,7 +33,7 @@ module.exports.getAllRoomsList = (req,res)=>{
             })
         }
         else {
-            return res.status(201).send({ status: 201, msg: 'roomType or roomNumber field is missing' })
+            return res.status(201).send({ status: 201, msg: 'roomNumber field is missing' })
         }
     }
     catch(err){

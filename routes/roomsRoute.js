@@ -6,7 +6,7 @@ const BookingRoom =require('../models/roomBook')
 
 
 
-router.get('/getallrooms',Room.getAllRoomsList)
+router.post('/getallrooms',Room.getAllRoomsList)
 router.post('/addBookingRoom',BookingRoom.bookingRoomModel)
 router.post('/getAllBookings',BookingRoom.getAllBooking)
 router.post('/editBooking',BookingRoom.editBooking)
